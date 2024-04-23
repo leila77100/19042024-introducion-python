@@ -25,6 +25,7 @@ while suma <= 50:
 print("El numero acumulado es ", suma, " y ha superado los 50")
 
 #Ejercicio 2: completa el ejercicio anterior añadiendo la funcionalidad de que sólo acumule los números pares
+#En el caso donde no sabemos el nombre de iteracion
 
 contador = 0
 i=int(input("dime un numero"))
@@ -38,7 +39,7 @@ while i!=50:
         i=int(input("dime un numero"))
 
 
-#exercicio de bucle for 
+#exercicio de bucle for / si sabemos el nombre de iteracion usamos el for
 
 acumulador = 0
 for x in range(6):

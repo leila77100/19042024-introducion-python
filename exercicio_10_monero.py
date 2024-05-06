@@ -95,7 +95,7 @@ while opc!=4:
 
 #exemplo que no functiona::: a arreglar
 
-class Wallet():
+'''class Wallet():
     
 
     def __init__(self):
@@ -130,4 +130,4 @@ def gastar_dinero(self):
         
 
 mi_wallet=Wallet() 
-mi_wallet.__init__()
+mi_wallet.__init__()'''

@@ -95,39 +95,36 @@ while opc!=4:
 
 #exemplo que no functiona::: a arreglar
 
-'''class Wallet():
+class Wallet():
     
 
     def __init__(self):
         self.estado = 0
-        pregunta=input("que quieres hacer, ingresar O gastar?")
-        
-        if pregunta == "ingresar":
-            pregunta = True
-            ingresar_wallet(self)
-            
-        if pregunta == "gastar":
-            pregunta=False
-            print("el estatut del cuenta esta:", self.estado)
-            gastar_dinero(self)
-            
-def ingresar_wallet(self):
-    ingresar=int(input("dime cuantos dinero quieres ingresar?"))
-    self.estado=ingresar+self.estado
-    return print("Estado de mi wallet esta: ", self.estado)
+       
+    def ingresar_wallet(self, candidad):
+        self.estado=candidad+self.estado
+        return print("Estado de mi wallet esta: ", self.estado)
 
-def gastar_dinero(self):
-    gastar=int(input("dime cuanto quieres gastar?"))
-    self.estado=self.estado-gastar
-    while True:
-        gastar=int(input("dime cuanto quieres gastar?"))
-        if gastar >self.estado:
-                print("siento perro no tienes suficiente dinero")
+    def gastar_dinero(self, candidad):
+        self.estado=self.estado-candidad
+        if candidad < self.estado:
+            print("Siento, no puedes hacer este transaccion")
         else:
-                self.estado=self.estado-gastar
-        break
-        return self.estado
+            return print("Estado de mi wallet esta: ", self.estado)
+
         
 
 mi_wallet=Wallet() 
-mi_wallet.__init__()'''
+
+pregunta= int(input("si quieres ingresar, pulsa 1, si Quieres gastar pulse 2"))
+
+if pregunta ==1:
+    pregunta_2= int(input("dime cuantos quieres ingresar"))
+    print(mi_wallet.ingresar_wallet(pregunta)) 
+elif pregunta ==2:
+    pregunta_2= int(input("dime cuantos quieres gastar"))
+    print(mi_wallet.gastar_dinero(pregunta))
+else:
+    print("ingresa un numero correcto")
+    pregunta= int(input("si quieres ingresar, pulsa 1, si Quieres gastar pulse 2"))
+

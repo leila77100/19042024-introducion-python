@@ -50,3 +50,7 @@ if pregunta == 2:
     candidad=int(input("cuanto quieres gastar?"))
     #enviamos la candidad a la funccion gastar_dinero_infantil
     print(mi_monedero.gastar_dinero_infantil(candidad))
+
+else:
+    print("por favor ingresa una opcion correcta")
+    pregunta= int(input("pulse 1 si eres un adulto y 2 si eres un niño"))
